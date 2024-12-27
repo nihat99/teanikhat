@@ -1,0 +1,17 @@
+import { Octokit } from "@octokit/rest";
+
+// Define variables
+const GITHUB_TOKEN = "your_personal_access_token"; // Replace with your GitHub PAT
+const OWNER = "your_username"; // Replace with your GitHub username
+const REPO = "your_repository_name"; // Replace with your repository name
+const FILE_PATH = "path/to/your/file.txt"; // The file path in the repo
+const COMMIT_MESSAGE = "Add new file via script";
+const CONTENT = "Hello, this is a test file!"; // Content of the file
+
+// Initialize Octokit
+const octokit = new Octokit({ auth: GITHUB_TOKEN });
+
+async function uploadFile() {
+    try {
+        // Check if the file exists in the repository
+        const { data: fileData } = await octokit.re
