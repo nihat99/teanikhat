@@ -1,0 +1,14 @@
+aiofiles
+boto3
+fastapi[standard]
+uvicorn
+pydantic
+python-json-logger
+pytest
+opentelemetry-distro
+opentelemetry-exporter-otlp
+opentelemetry-instrumentation-fastapi
+opentelemetry-instrumentation-httpx
+hivemind@ git+https://github.com/learning-at-home/hivemind@1.11.11
+uuid
+web3
